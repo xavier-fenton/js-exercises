@@ -23,3 +23,39 @@ console.log(min3) // expect [3,3,3,4,5]
 let ex2Arr = ['Jared', 'Taylor', 'Johnny']
 let objects = ex2Arr.map() //your code goes in the brackets here
 console.log(objects) // expect [{name: 'Jared'}, {name: 'Taylor'}, {name: 'Johnny'}] 
+
+
+
+
+// .find()
+
+// returns the first element in the array which satisfies the condition you tell it
+// Takes 1 parameter, which is a function that returns a condition which will evaluate to true or false
+// eg 
+let arr2 = [1,2,3,4,5]
+
+let moreThanThree = arr2.find((number) => { return number > 3}) //look at each number and if number > 3 is true, 
+//it will return that number, otherwise it moves on to the next number and tests that.
+
+console.log(moreThanThree) // expect 4
+
+// Exercise 3
+// Use a .find to return the first element in this array which has the value of 'orange' in the color key
+let ex3Arr = [
+  {
+    name: 'Jared',
+    color: 'yellow'
+  },
+  {
+    name: 'Taylor',
+    color: 'orange'
+  },
+  {
+    name: 'Johnny',
+    color: 'orange'
+  }
+]
+
+let orange = ex3Arr.find() // your code goes in the brackets here
+
+console.log(orange) // expect { name: 'Taylor', colour: 'orange'}

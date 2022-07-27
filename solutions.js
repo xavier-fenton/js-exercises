@@ -20,3 +20,25 @@ let objects = ex2Arr.map((string) => {
   // looking at, and we are returning that object
 })
 console.log(objects) // expect [{name: 'Jared'}, {name: 'Taylor'}, {name: 'Johnny'}] 
+
+
+// Exercise 3
+// Use a .find to return the first element in this array which has the value of 'orange' in the color key
+let ex3Arr = [
+  {
+    name: 'Jared',
+    color: 'yellow'
+  },
+  {
+    name: 'Taylor',
+    color: 'orange'
+  },
+  {
+    name: 'Johnny',
+    color: 'orange'
+  }
+]
+
+let orange = ex3Arr.find((obj) => {return obj.color === 'orange' }) // your code goes in the brackets here
+
+console.log(orange) // expect { name: 'Taylor', colour: 'orange'}
